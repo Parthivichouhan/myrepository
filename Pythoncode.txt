@@ -1,0 +1,5 @@
+f = open("MyPythonfile.txt", "a")
+f.write("Add one more line")
+
+f = open("MyPythonfile.txt", "r")
+print(f.read())add line via command
