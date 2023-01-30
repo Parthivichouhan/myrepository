@@ -1,0 +1,673 @@
+Admin@MIS MINGW64 ~
+$ ls
+'3D Objects'/         Downloads/              'My Documents'@                                                                                 Pictures/       Templates@           ntuser.dat.LOG2
+ AppData/             Favorites/               NTUSER.DAT                                                                                     PrintHood@      Untitled.ipynb       ntuser.ini
+'Application Data'@   IntelGraphicsProfiles/   NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf                                        Recent@         Untitled1.ipynb      seaborn-data/
+ Contacts/            Links/                   NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms  'Saved Games'/   Videos/              source/
+ Cookies@            'Local Settings'@         NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms   Searches/       eclipse/
+ Desktop/             MicrosoftEdgeBackups/    NetHood@                                                                                       SendTo@         eclipse-workspace/
+ Documents/           Music/                   OneDrive/                                                                                     'Start Menu'@    ntuser.dat.LOG1
+
+Admin@MIS MINGW64 ~
+$ cd Documents
+
+Admin@MIS MINGW64 ~/Documents
+$ ls
+'Custom Office Templates'/   IISExpress/  'My Pictures'@  'My Tableau Repository'/  'My Web Sites'/   'Power BI Desktop'/              'Visual Studio 2015'/  'Visual Studio 2022'/   desktop.ini
+ Files/                     'My Music'@   'My Shapes'/    'My Videos'@              'Outlook Files'/  'SQL Server Management Studio'/  'Visual Studio 2017'/   WindowsPowerShell/
+
+Admin@MIS MINGW64 ~/Documents
+$ cd Test1
+bash: cd: Test1: No such file or directory
+
+Admin@MIS MINGW64 ~/Documents
+$ cd Test1
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ ls
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ git clone https://giuthub.comParthivichouhan/myrepository
+Cloning into 'myrepository'...
+fatal: unable to access 'https://giuthub.comParthivichouhan/myrepository/': Could not resolve host: giuthub.comParthivichouhan
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ git clone https://github.com/Parthivichouhan/myrepository
+Cloning into 'myrepository'...
+warning: You appear to have cloned an empty repository.
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ ls
+myrepository/
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ ls
+Pythoncode.txt  myrepository/
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ echo "add line via command" >> Pythoncode.txt
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ git init
+Initialized empty Git repository in C:/Users/Admin/Documents/Test1/.git/
+
+
+Admin@MIS MINGW64 ~/Documents/Test1 (master)
+$
+
+Admin@MIS MINGW64 ~/Documents/Test1 (master)
+$ add Pythoncode.txt
+bash: add: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (master)
+$ add . Pythoncode.txt
+bash: add: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (master)
+$ git add . Pythoncode.txt
+warning: in the working copy of 'Pythoncode.txt', LF will be replaced by CRLF the next time Git touches it
+error: 'myrepository/' does not have a commit checked out
+fatal: adding files failed
+
+Admin@MIS MINGW64 ~/Documents/Test1 (master)
+$ git checkout -b main
+Switched to a new branch 'main'
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add . Pythoncode.txt
+warning: in the working copy of 'Pythoncode.txt', LF will be replaced by CRLF the next time Git touches it
+error: 'myrepository/' does not have a commit checked out
+fatal: adding files failed
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@MIS.(none)')
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git config --global user.email "sisodia.shweta1985@gmail.com"
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit -m "first commit"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Pythoncode.txt
+        myrepository/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add . Pythoncode.txt
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add . Pythoncode.txt
+warning: in the working copy of 'Pythoncode.txt', LF will be replaced by CRLF the next time Git touches it
+error: 'myrepository/' does not have a commit checked out
+fatal: adding files failed
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ echo "my first readme" >> README.md
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Admin/Documents/Test1/.git/
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ add README.md
+bash: add: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ commit -m "first commit"
+bash: commit: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit -m "first commit"
+[main (root-commit) 73bf1ce] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git branch -M main
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git remote add origin https://github.com/Parthivichouhan/myrepository.git
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ push -u origin main
+bash: push: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 230 bytes | 230.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Parthivichouhan/myrepository.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+============================================
+
+
+Admin@MIS MINGW64 ~
+$ ls
+'3D Objects'/         Downloads/              'My Documents'@                                                                                 P
+ AppData/             Favorites/               NTUSER.DAT                                                                                     P
+'Application Data'@   IntelGraphicsProfiles/   NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf                                        R
+ Contacts/            Links/                   NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms  'S
+ Cookies@            'Local Settings'@         NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms   S
+ Desktop/             MicrosoftEdgeBackups/    NetHood@                                                                                       S
+ Documents/           Music/                   OneDrive/                                                                                     'S
+
+Admin@MIS MINGW64 ~
+$ cd Documents
+
+Admin@MIS MINGW64 ~/Documents
+$ ls
+'Custom Office Templates'/   IISExpress/  'My Pictures'@  'My Tableau Repository'/  'My Web Sites'/   'Power BI Desktop'/              'Visual
+ Files/                     'My Music'@   'My Shapes'/    'My Videos'@              'Outlook Files'/  'SQL Server Management Studio'/  'Visual
+
+Admin@MIS MINGW64 ~/Documents
+$ cd Test1
+bash: cd: Test1: No such file or directory
+
+Admin@MIS MINGW64 ~/Documents
+$ cd Test1
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ ls
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ git clone https://giuthub.comParthivichouhan/myrepository
+Cloning into 'myrepository'...
+fatal: unable to access 'https://giuthub.comParthivichouhan/myrepository/': Could not resolve host: giuthub.comParthivichouhan
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ git clone https://github.com/Parthivichouhan/myrepository
+Cloning into 'myrepository'...
+warning: You appear to have cloned an empty repository.
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ ls
+myrepository/
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ ls
+Pythoncode.txt  myrepository/
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ echo "add line via command" >> Pythoncode.txt
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+Admin@MIS MINGW64 ~/Documents/Test1
+$ git init
+Initialized empty Git repository in C:/Users/Admin/Documents/Test1/.git/
+
+
+Admin@MIS MINGW64 ~/Documents/Test1 (master)
+$
+
+Admin@MIS MINGW64 ~/Documents/Test1 (master)
+$ add Pythoncode.txt
+bash: add: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (master)
+$ add . Pythoncode.txt
+bash: add: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (master)
+$ git add . Pythoncode.txt
+warning: in the working copy of 'Pythoncode.txt', LF will be replaced by CRLF the next time Git touches it
+error: 'myrepository/' does not have a commit checked out
+fatal: adding files failed
+
+Admin@MIS MINGW64 ~/Documents/Test1 (master)
+$ git checkout -b main
+Switched to a new branch 'main'
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add . Pythoncode.txt
+warning: in the working copy of 'Pythoncode.txt', LF will be replaced by CRLF the next time Git touches it
+error: 'myrepository/' does not have a commit checked out
+fatal: adding files failed
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@MIS.(none)')
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git config --global user.email "sisodia.shweta1985@gmail.com"
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit -m "first commit"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Pythoncode.txt
+        myrepository/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add . Pythoncode.txt
+warning: in the working copy of 'Pythoncode.txt', LF will be replaced by CRLF the next time Git touches it
+error: 'myrepository/' does not have a commit checked out
+fatal: adding files failed
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ echo "my first readme" >> README.md
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Admin/Documents/Test1/.git/
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ add README.md
+bash: add: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ commit -m "first commit"
+bash: commit: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit -m "first commit"
+[main (root-commit) 73bf1ce] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git branch -M main
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git remote add origin https://github.com/Parthivichouhan/myrepository.git
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ push -u origin main
+bash: push: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 230 bytes | 230.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Parthivichouhan/myrepository.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ ls
+Pythoncode.txt  README.md  myrepository/
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add Pythoncode.txt
+warning: in the working copy of 'Pythoncode.txt', LF will be replaced by CRLF the next time Git touches it
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ ^C
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit -m "second commit"
+[main a4c089a] second commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Pythoncode.txt
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$  push -u origin main
+bash: push: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 381 bytes | 381.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Parthivichouhan/myrepository.git
+   73bf1ce..a4c089a  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git checkout -b developer
+Switched to a new branch 'developer'
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ echo "my first Readme" >> README.md
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git branch -M developer
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git commit -m "second commit"
+On branch developer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myrepository/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git add Pythoncode.txt
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git commit -m "second commit"
+On branch developer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myrepository/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git commit -m "developer commit"
+On branch developer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myrepository/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git push -u origin developer
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'developer' on GitHub by visiting:
+remote:      https://github.com/Parthivichouhan/myrepository/pull/new/developer
+remote:
+To https://github.com/Parthivichouhan/myrepository.git
+ * [new branch]      developer -> developer
+branch 'developer' set up to track 'origin/developer'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$ ls
+Pythoncode.txt  README.md  myrepository/
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$ git push -u origin feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Parthivichouhan/myrepository/pull/new/feature
+remote:
+To https://github.com/Parthivichouhan/myrepository.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$ git checkout -b main
+fatal: a branch named 'main' already exists
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$ git push -u origin feature
+
+
+
+
+
+
+Everything up-to-date
+branch 'feature' set up to track 'origin/feature'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$
+
+Admin@MIS MINGW64 ~/Documents/Test1 (feature)
+$ git checkout main
+Switched to branch 'main'
+M       README.md
+Your branch is up to date with 'origin/main'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ ls
+Pythoncode.txt  README.md  myrepository/
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ echo "my new code" >> newcode.txt
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ ls
+Pythoncode.txt  README.md  myrepository/  newcode.txt
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add scorecardapp.py
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit -m "added scorecardapp code"
+[main bc1087e] added scorecardapp code
+ 1 file changed, 18 insertions(+)
+ create mode 100644 scorecardapp.py
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git push origin developer
+Everything up-to-date
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git push origin feature
+Everything up-to-date
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ ls
+Pythoncode.txt  README.md  myrepository/  newcode.txt  scorecardapp.py
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add scorecardapp.py
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit -m "developer commit"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myrepository/
+        newcode.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit -a "developer commit"
+fatal: paths 'developer commit ...' with -a does not make sense
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit "developer commit"
+error: pathspec 'developer commit' did not match any file(s) known to git
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add scorecardapp.py
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit "developer commit"
+error: pathspec 'developer commit' did not match any file(s) known to git
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git commit
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myrepository/
+        newcode.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 609 bytes | 609.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Parthivichouhan/myrepository.git
+   a4c089a..bc1087e  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git push -u origin developer
+Everything up-to-date
+branch 'developer' set up to track 'origin/developer'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git push -u origin feature
+Everything up-to-date
+branch 'feature' set up to track 'origin/feature'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git add scorecardapp.py origin developer
+fatal: pathspec 'origin' did not match any files
+
+Admin@MIS MINGW64 ~/Documents/Test1 (main)
+$ git checkout developer
+Switched to branch 'developer'
+M       README.md
+Your branch is up to date with 'origin/developer'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git add scorecardapp.py
+fatal: pathspec 'scorecardapp.py' did not match any files
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ ls
+Pythoncode.txt  README.md  myrepository/  newcode.txt
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git add scorecardapp.py
+fatal: pathspec 'scorecardapp.py' did not match any files
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git push -u origin developer
+Everything up-to-date
+branch 'developer' set up to track 'origin/developer'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ ls
+Pythoncode.txt  README.md  myrepository/  newcode.txt
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ $ git add scorecardapp.py
+bash: $: command not found
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ ^C
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git branch -M developer
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git add scorecardapp.py
+fatal: pathspec 'scorecardapp.py' did not match any files
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git add scorecardapp.py origin developer
+fatal: pathspec 'scorecardapp.py' did not match any files
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git push -u origin developer
+Everything up-to-date
+branch 'developer' set up to track 'origin/developer'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git commit "developer commit"
+error: pathspec 'developer commit' did not match any file(s) known to git
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$ git push -u origin developer
+Everything up-to-date
+branch 'developer' set up to track 'origin/developer'.
+
+Admin@MIS MINGW64 ~/Documents/Test1 (developer)
+$
